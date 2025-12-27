@@ -23,7 +23,7 @@ const SportsSection: React.FC = () => {
   // Distribute Layout Sections
   const leftTwo = news.slice(0, 2);
   const centerMain = news.slice(2, 4);
-  const rightSmall = news.slice(4, 9); // Remaining right column
+  const rightSmall = news.slice(4, 6); // Remaining right column
 
   return (
     <section className="bg-white">
