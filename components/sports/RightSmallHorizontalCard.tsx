@@ -14,7 +14,9 @@ interface MainCenterSportsCardProps {
   article: Article;
 }
 
-const MainCenterSportsCard: React.FC<MainCenterSportsCardProps> = ({ article }) => {
+const MainCenterSportsCard: React.FC<MainCenterSportsCardProps> = ({
+  article,
+}) => {
   return (
     <Link
       href={`/news/${article.id}`}
@@ -32,7 +34,7 @@ const MainCenterSportsCard: React.FC<MainCenterSportsCardProps> = ({ article }) 
 
       {/* Title Overlay */}
       <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/60 to-transparent p-4">
-        <h3 className="text-white text-xl font-bold leading-tight">
+        <h3 className="text-black text-xl font-bold leading-tight">
           {article.title}
         </h3>
       </div>
