@@ -21,9 +21,9 @@ const SportsSection: React.FC = () => {
       <p className="text-center py-10 text-red-400">Failed to load news.</p>
     );
   // Distribute Layout Sections
-  const leftTwo = news.slice(0, 3); // Left 2 articles
-  const centerMain = news[2]; // Center main article
-  const rightSmall = news.slice(3,6); // Remaining right column
+  const leftTwo = news.slice(0, 2);
+  const centerMain = news.slice(2, 4);
+  const rightSmall = news.slice(4, 9); // Remaining right column
 
   return (
     <section className="bg-white">
@@ -48,16 +48,17 @@ const SportsSection: React.FC = () => {
 
           {/* CENTER MAIN ARTICLE */}
           <div className="lg:col-span-6">
-            {centerMain && (
+            {centerMain.map((article) => (
               <MainCenterSportsCard
+                key={article._id}
                 article={{
-                  id: centerMain._id,
-                  title: centerMain.title,
-                  image: centerMain.imageSrc || "/placeholder.png",
-                  summary: centerMain.summary,
+                  id: article._id,
+                  title: article.title,
+                  image: article.imageSrc || "/placeholder.png",
+                  summary: article.summary,
                 }}
               />
-            )}
+            ))}
           </div>
 
           {/* RIGHT SMALL NEWS LIST */}
