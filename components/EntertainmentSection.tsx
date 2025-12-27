@@ -8,7 +8,6 @@ import SectionHeader from "./ui/SectionHeader";
 import FullScreenLoading from "./ui/FullScreenLoading";
 import { useGetNewsQuery } from "@/app/redux/features/news/newsApi";
 
-
 const EntertainmentSection: React.FC = () => {
   // RTK Query call
   const { data, isLoading, error } = useGetNewsQuery({
@@ -26,13 +25,11 @@ const EntertainmentSection: React.FC = () => {
     return <p className="text-center py-10 text-white">No news found.</p>;
 
   const mainArticle = news[0];
-  const leftArticles = news.slice(1, 4);
-  const rightArticles = news.slice(4, 7);
+  const leftArticles = news.slice(1, 6);
+  const rightArticles = news.slice(7, 9);
 
   return (
     <>
-     
-
       <section className="bg-[#19363D] py-10">
         <div className="container mx-auto px-4">
           {isLoading && <FullScreenLoading />}
