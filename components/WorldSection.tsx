@@ -72,7 +72,7 @@ const WorldSection: React.FC = () => {
           </div>
 
           {/* BOTTOM LIST CARDS */}
-          {bottomCards.slice(0, 4).map((item) => (
+          {bottomCards.slice(0, 5).map((item) => (
             <div key={item._id} className="lg:col-span-2 mt-4">
               <BasicCard article={mapArticle(item)} />
             </div>
