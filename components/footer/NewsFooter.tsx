@@ -19,7 +19,7 @@ const footerLinks = [
       { name: "বাণিজ্য", href: "/business" },
       { name: "জাতীয়", href: "/national" },
       { name: "রাজনীতি", href: "/politics" },
-     { name: "মতামত", href: "/opinion" }
+      { name: "মতামত", href: "/opinion" },
     ],
   },
 ];
@@ -82,8 +82,7 @@ const NewsFooter = () => {
           <div className="md:col-span-2 flex justify-center md:justify-end mt-8 md:mt-0">
             <div className="text-center md:text-right w-full md:w-auto">
               <h2 className="text-lg font-bold mb-4">
-              প্রধান সম্পাদক ও প্রকাশক :  ইঞ্জিনিয়ার মো. বায়েজীদ
-
+                প্রধান সম্পাদক ও প্রকাশক : ইঞ্জিনিয়ার মো. বায়েজীদ
               </h2>
               <ul className="space-y-3 text-sm mb-6">
                 <li className="flex items-center justify-center md:justify-end">
@@ -134,8 +133,23 @@ const NewsFooter = () => {
         </div>
 
         {/* Copyright */}
-        <div className="py-4 text-center text-xs mt-4 border-t border-gray-200">
-          &copy; {new Date().getFullYear()} TSB News24 TV. All Rights Reserved.
+        <div className="py-4 text-center text-xs mt-4 border-t border-gray-200 space-y-1">
+          <p>
+            &copy; {new Date().getFullYear()} TSB News24 TV. All Rights
+            Reserved.
+          </p>
+
+          <p>
+            Developed by{" "}
+            <a
+              href="www.linkedin.com/in/ayas-ibrahim-b747793a8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline font-medium"
+            >
+              Ayas Ibrahim
+            </a>
+          </p>
         </div>
       </div>
     </footer>
