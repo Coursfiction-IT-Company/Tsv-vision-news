@@ -142,8 +142,8 @@ const NewsFooter = () => {
           <p>
             Developed by{" "}
             <a
-              href="www.linkedin.com/in/ayas-ibrahim-b747793a8"
-              target="_blank"
+              href="https://www.linkedin.com/in/ayas-ibrahim-b747793a8"
+               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline font-medium"
             >
